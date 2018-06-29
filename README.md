@@ -5,6 +5,8 @@
 ## Description
 * This is our week one code review for the React portion of our course. The goal of this review is to take a previous project we made in angular and clone a static version that includes client-side routing, styling with css objects/modules, propTypes, and components for modular UI elements.
 
+## Component Tree
+![Sketch](src/assets/img/tree.jpg)
 
 ## Specifications
 
@@ -29,7 +31,9 @@ Run `npm run start` for a dev server. Navigate to `http://localhost:8080/`. The 
 
 ## Notes
 
-* 
+* The only issues I ran into doing this project were pretty basic syntax issues. At one point, I incorrectly labelled one of my components but the linter makes it pretty easy to track those problems down. Overall, the process went fairly smoothly.
+
+* Comparing Angular and React, I like React in this context so far. The functional nature of the library makes it easy for me to visualize what each individual part is doing, especially since the styling, template and coded portions are all present in the same component. It was a lot easier for me to get lost in the component structure of Angular seeing as each component had it's own individual template, style, and coded files to work with. Overall, React seems to make this process a little easier to visualize.
 
 ## Known Bugs
 
