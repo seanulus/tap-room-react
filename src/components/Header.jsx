@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Wood from '../assets/img/wood.jpg';
 
 
 
@@ -7,18 +8,22 @@ function Header(){
 
   const link = {
     textDecoration: 'none',
-    color: 'black'
-  }
+    color: 'black',
+    marginBottom: '10px'
+  };
   return (
     <div>
       <style jsx>{`
+          div {
+            background: linear-gradient(to bottom, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 100%), url(${Wood});
+          }
           h1 {
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-weight: 300;
             text-align: center;
             text-decoration: underline;
             text-underline-position: under;
-            margin-bottom: 0px;
+            margin: 0px;
           }
           h2 {
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

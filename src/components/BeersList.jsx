@@ -60,7 +60,7 @@ function BeersList(){
   return(
     <div>
       <style jsx>{`
-
+          
       `}</style>
 
       {masterKegList.map((beer, index) =>
