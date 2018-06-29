@@ -1,304 +1,79 @@
 import React from 'react';
-import Produce from './Produce';
-import carrots from '../assets/img/carrots.jpg';
+import Beers from './Beers';
+// import carrots from '../assets/img/carrots.jpg';
 
-const availableProduce = [
+const masterKegList = [
   {
-    month: 'January',
-    selection: [
-      'Apples',
-      'Hazelnuts',
-      'Pears',
-      'Garlic',
-      'Mushrooms',
-      'Onions',
-      'Potatoes',
-      'Turnips'
-    ]
+    name: 'Ruby Zozzle',
+    brewer: 'Hi-Wheel',
+    description: 'Sparkling Wine & Grapefruit',
+    abv: '6.8%',
+    price: '7',
+    remaining: '20'
   },
   {
-    month: 'February',
-    selection: [
-      'Apples',
-      'Hazelnuts',
-      'Pears',
-      'Garlic',
-      'Mushrooms',
-      'Onions',
-      'Potatoes'
-    ]
+    name: 'Tart N Juicy',
+    brewer: 'Epic',
+    description: 'Sour IPA',
+    abv: '4.5%',
+    price: '6',
+    remaining: '60'
   },
   {
-    month: 'March',
-    selection: [
-      'Apples',
-      'Hazelnuts',
-      'Pears',
-      'Rhubarb',
-      'Garlic',
-      'Mushrooms',
-      'Onions',
-      'Potatoes'
-    ]
+    name: 'Hamm\'s',
+    brewer: 'Miller/Coors',
+    description: 'American Lager',
+    abv: '4.7%',
+    price: '3',
+    remaining: '65'
   },
   {
-    month: 'April',
-    selection: [
-      'Apples',
-      'Hazelnuts',
-      'Pears',
-      'Rhubarb',
-      'Asparagus',
-      'Garlic',
-      'Lettuce',
-      'Mushrooms',
-      'Onions',
-      'Potatoes'
-    ]
+    name: 'Prismatic',
+    brewer: 'Ninkasi',
+    description: 'Juicy IPA',
+    abv:  '5.9%',
+    price: '6',
+    remaining: '75'
   },
   {
-    month: 'May',
-    selection: [
-      'Apples',
-      'Hazelnuts',
-      'Pears',
-      'Rhubarb',
-      'Asparagus',
-      'Cauliflower',
-      'Garlic',
-      'Lettuce',
-      'Potatoes',
-      'Radishes'
-    ]
+    name: 'Juicy Haze',
+    brewer: 'New Belgium',
+    description: 'India Pale Ale',
+    abv:  '7.5%',
+    price: '6',
+    remaining: '18'
   },
   {
-    month: 'June',
-    selection: [
-      'Apples',
-      'Hazelnuts',
-      'Pears',
-      'Rhubarb',
-      'Blackberries',
-      'Cherries',
-      'Raspberries',
-      'Strawberries',
-      'Asparagus',
-      'Broccoli',
-      'Cauliflower',
-      'Kohlrabi',
-      'Lettuce',
-      'Mushrooms',
-      'Potatoes',
-      'Radishes',
-      'Squash'
-    ]
-  },
-  {
-    month: 'July',
-    selection: [
-      'Apples',
-      'Hazelnuts',
-      'Pears',
-      'Rhubarb',
-      'Apricots',
-      'Blackberries',
-      'Blueberries',
-      'Cherries',
-      'Melons',
-      'Nectarines',
-      'Peaches',
-      'Raspberries',
-      'Strawberries',
-      'Tomatoes',
-      'Beets',
-      'Broccoli',
-      'Brussel Sprouts',
-      'Cabbage',
-      'Carrots',
-      'Cauliflower',
-      'Cucumber',
-      'Eggplant',
-      'Garlic',
-      'Green Beans',
-      'Kohlrabi',
-      'Lettuce',
-      'Mushrooms',
-      'Potatoes',
-      'Radishes',
-      'Squash',
-      'Turnips'
-    ]
-  },
-  {
-    month: 'August',
-    selection: [
-      'Apples',
-      'Apricots',
-      'Blackberries',
-      'Blueberries',
-      'Cherries',
-      'Melons',
-      'Nectarines',
-      'Peaches',
-      'Pears',
-      'Plums',
-      'Raspberries',
-      'Rhubarb',
-      'Strawberries',
-      'Tomatoes',
-      'Beets',
-      'Broccoli',
-      'Brussel Sprouts',
-      'Cabbage',
-      'Carrots',
-      'Cauliflower',
-      'Corn',
-      'Cucumber',
-      'Eggplant',
-      'Garlic',
-      'Green Beans',
-      'Kohlrabi',
-      'Lettuce',
-      'Mushrooms',
-      'Onions',
-      'Peas',
-      'Peppers',
-      'Potatoes',
-      'Radishes',
-      'Squash',
-      'Turnips'
-    ]
-  },
-  {
-    month: 'September',
-    selection: [
-      'Apples',
-      'Blueberries',
-      'Grapes',
-      'Melons',
-      'Peaches',
-      'Pears',
-      'Plums',
-      'Raspberries',
-      'Tomatoes',
-      'Broccoli',
-      'Brussel Sprouts',
-      'Cabbage',
-      'Carrots',
-      'Cauliflower',
-      'Corn',
-      'Cucumber',
-      'Eggplant',
-      'Garlic',
-      'Green Beans',
-      'Kohlrabi',
-      'Lettuce',
-      'Mushrooms',
-      'Onions',
-      'Peas',
-      'Peppers',
-      'Potatoes',
-      'Radishes',
-      'Squash',
-      'Turnips'
-    ]
-  },
-  {
-    month: 'October',
-    selection: [
-      'Apples',
-      'Grapes',
-      'Hazelnuts',
-      'Melons',
-      'Peaches',
-      'Pears',
-      'Tomatoes',
-      'Broccoli',
-      'Brussel Sprouts',
-      'Cabbage',
-      'Carrots',
-      'Cauliflower',
-      'Corn',
-      'Cucumber',
-      'Eggplant',
-      'Garlic',
-      'Green Beans',
-      'Kohlrabi',
-      'Lettuce',
-      'Mushrooms',
-      'Onions',
-      'Peas',
-      'Peppers',
-      'Potatoes',
-      'Pumpkins',
-      'Radishes',
-      'Squash',
-      'Turnips'
-    ]
-  },
-  {
-    month: 'November',
-    selection: [
-      'Apples',
-      'Hazelnuts',
-      'Pears',
-      'Broccoli',
-      'Carrots',
-      'Cauliflower',
-      'Garlic',
-      'Mushrooms',
-      'Onions',
-      'Potatoes',
-      'Squash',
-      'Turnips'
-    ]
-  },
-  {
-    month: 'December',
-    selection: [
-      'Apples',
-      'Hazelnuts',
-      'Pears',
-      'Broccoli',
-      'Carrots',
-      'Cauliflower',
-      'Garlic',
-      'Mushrooms',
-      'Onions',
-      'Potatoes',
-      'Turnips'
-    ]
+    name: '8 Hop',
+    brewer: 'New Belgium',
+    description: 'Pale Ale',
+    abv:  '5.5%',
+    price: '6',
+    remaining: '58'
   }
 ];
 
 
 
-function ProduceList(){
+
+function BeersList(){
   return(
     <div>
       <style jsx>{`
-        div {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-around;
-        }
 
-        img {
-          width: 110%;
-          height: 100%;
-          position: absolute;
-          margin-top: 5px;
-        }
       `}</style>
 
-      {availableProduce.map((produce, index) =>
-        <Produce month = {produce.month}
-          selection = {produce.selection}
+      {masterKegList.map((beer, index) =>
+        <Beers brewer = {beer.brewer}
+          name = {beer.name}
+          description = {beer.description}
+          abv = {beer.abv}
+          price = {beer.price}
+          remaining = {beer.remaining}
           key={index}/>
       )}
-      <img src={carrots} />
     </div>
   );
 }
 
-export default ProduceList;
+export default BeersList;
