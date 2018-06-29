@@ -9,13 +9,13 @@ function App(){
   return (
     <div>
       <style jsx>{`
-        
+
       `}</style>
       <Header/>
       <Switch>
         <Route exact path='/' component={HomePage} />
-        <Route path='/hours' component={HoursList} />
-        <Route path='/hours' component={BeersList} />
+        <Route exact path='/hours' component={HoursList} />
+        <Route exact path = '/beers' component={BeersList} />
       </Switch>
     </div>
   );
