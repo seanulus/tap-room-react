@@ -11,7 +11,7 @@ function App(){
     <div>
       <style jsx>{`
           background-color: black;
-          height: 1000px;
+          height: 1200px;
       `}</style>
       <Header/>
       <Switch>
