@@ -36,7 +36,7 @@ function HoursList(){
 
   const days = {
     display: 'grid',
-    gridTemplateColumns: 'repeat(6, 1fr)',
+    gridTemplateColumns: 'repeat(7, 1fr)',
     gridColumnGap: '10px',
     padding: '10px',
     height: '240px'
@@ -45,7 +45,9 @@ function HoursList(){
   return(
     <div style={days}>
       <style jsx>{`
-
+          div {
+            color: white;
+          }
       `}</style>
       {masterHoursList.map((hours, index) =>
         <Hours day = {hours.day}

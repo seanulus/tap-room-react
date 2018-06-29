@@ -6,7 +6,7 @@ const masterKegList = [
   {
     name: 'Ruby Zozzle',
     brewer: 'Hi-Wheel',
-    description: 'Sparkling Wine & Grapefruit',
+    description: 'Sparkling Wine',
     abv: '6.8%',
     price: '7',
     remaining: '20'

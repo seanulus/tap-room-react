@@ -8,14 +8,16 @@ function Header(){
 
   const link = {
     textDecoration: 'none',
-    color: 'black',
+    color: 'white',
     marginBottom: '10px'
   };
   return (
     <div>
       <style jsx>{`
           div {
-            background: linear-gradient(to bottom, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 100%), url(${Wood});
+            background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%), url(${Wood});
+            color: white;
+            opacity: 0.92;
           }
           h1 {
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
