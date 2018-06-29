@@ -31,7 +31,14 @@ function Beers(props){
             margin: 4px;
             border-radius: 4px;
           }
+          img {
+            width: 100px;
+            border-radius: 100%;
+          }
       `}</style>
+      <div className='logo-image'>
+        <img src={props.image}/>
+      </div>
       <div className='info'>
         <h3>{props.brewer}</h3>
         <h3>{props.name}</h3>
@@ -56,7 +63,8 @@ Beers.propTypes = {
   description: PropTypes.string,
   abv: PropTypes.string,
   price: PropTypes.string,
-  remaining: PropTypes.string
+  remaining: PropTypes.string,
+  image: PropTypes.string
 };
 
 export default Beers;

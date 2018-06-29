@@ -26,6 +26,7 @@ function Header(){
             text-decoration: underline;
             text-underline-position: under;
             margin: 0px;
+            padding-top: 10px;
           }
           h2 {
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
