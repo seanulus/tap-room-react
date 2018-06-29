@@ -5,6 +5,8 @@ import hamms from '../assets/img/hamms.jpeg';
 import newBelgium from '../assets/img/new-belgium.png';
 import ninkasi from '../assets/img/ninkasi.jpg';
 import epic from '../assets/img/epic.jpg';
+import boneyard from '../assets/img/boneyard.jpg';
+import wildcraft from '../assets/img/wildcraft.jpg';
 
 const masterKegList = [
   {
@@ -60,6 +62,24 @@ const masterKegList = [
     price: '6',
     remaining: '58',
     image: newBelgium
+  },
+  {
+    name: '8 Hop',
+    brewer: 'Boneyard',
+    description: 'Notorius',
+    abv:  '11.5%',
+    price: '6',
+    remaining: '64',
+    image: boneyard
+  },
+  {
+    name: 'Sage Cider',
+    brewer: 'Wildcraft',
+    description: 'Dry Cider',
+    abv:  '7.4%',
+    price: '6',
+    remaining: '48',
+    image: wildcraft
   }
 ];
 

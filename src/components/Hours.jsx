@@ -8,6 +8,10 @@ function Hours(props){
           div {
             padding-left: 15px;
           }
+          h3 {
+            text-align: center;
+            font-weight: 300;
+          }
       `}</style>
       <h3>{props.day}</h3>
       <p>{props.hours}</p>
