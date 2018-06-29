@@ -60,7 +60,16 @@ function BeersList(){
   return(
     <div>
       <style jsx>{`
-          
+          div {
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+            margin-left: 2px;
+            border-radius: 5px;
+            width: 100%;
+          }
       `}</style>
 
       {masterKegList.map((beer, index) =>

@@ -9,7 +9,8 @@ function App(){
   return (
     <div>
       <style jsx>{`
-
+          background-color: black;
+          height: 1000px;
       `}</style>
       <Header/>
       <Switch>
