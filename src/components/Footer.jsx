@@ -1,5 +1,6 @@
 import React from 'react';
 import HoursList from './HoursList';
+import LinkList from './LinkList';
 
 function Footer() {
   return(
@@ -11,6 +12,7 @@ function Footer() {
 
       `}</style>
       <HoursList/>
+      <LinkList/>
     </div>
   );
 }
