@@ -5,7 +5,9 @@ function Hours(props){
   return (
     <div>
       <style jsx>{`
-
+          div {
+            padding-left: 15px;
+          }
       `}</style>
       <h3>{props.day}</h3>
       <p>{props.hours}</p>

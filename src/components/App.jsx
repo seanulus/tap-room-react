@@ -1,9 +1,9 @@
 import React from 'react';
 import HomePage from './HomePage';
 import BeersList from './BeersList';
-import HoursList from './HoursList';
 import MenuList from './MenuList';
 import Header from './Header';
+import Footer from './Footer';
 import { Switch, Route } from 'react-router-dom';
 
 function App(){
@@ -16,10 +16,10 @@ function App(){
       <Header/>
       <Switch>
         <Route exact path='/' component={HomePage} />
-        <Route exact path='/hours' component={HoursList} />
         <Route exact path= '/beers' component={BeersList} />
         <Route exact path='/menu' component={MenuList} />
       </Switch>
+      <Footer/>
     </div>
   );
 }

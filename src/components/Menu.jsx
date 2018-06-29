@@ -15,12 +15,16 @@ function Menu(props) {
           .description {
             padding-left: 10px;
           }
+          h3, p {
+            font-weight: 300;
+            letter-spacing, 5px;
+          }
       `}</style>
       <div className='food-image'>
         <img src={props.image}/>
       </div>
       <div className='description'>
-        <h4>{props.item}</h4>
+        <h3>{props.item}</h3>
         <p>{props.description}</p>
         <p>{props.price}</p>
       </div>

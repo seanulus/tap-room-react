@@ -4,7 +4,6 @@ import brisket from '../assets/img/brisket.jpg';
 import chicken from '../assets/img/chicken.jpg';
 import ribs from '../assets/img/ribs.jpg';
 import salmon from '../assets/img/salmon.jpg';
-import turkey from '../assets/img/turkey-sando.jpg';
 import brat from '../assets/img/brat-sando.jpg';
 import pork from '../assets/img/pork-sando.jpg';
 
@@ -34,12 +33,6 @@ const menuList = [
     image: salmon
   },
   {
-    item: 'Smoked Turkey Sandwich',
-    description: 'Smoked Turkey on Wheat with all the fixins',
-    price: '$9',
-    image: turkey
-  },
-  {
     item: 'House Smoked Bratwurst Sandwich',
     description: 'Smoked Brat with Stone Ground Mustard and Kraut on a Kaiser',
     price: '$9',
@@ -59,14 +52,15 @@ function MenuList() {
       <style jsx>{`
           div {
             display: grid;
-            grid-template-rows: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 20px;
             padding-top: 30px;
+            padding-left: 20px;
             color: white;
           }
       `}</style>
-    {menuList.map((food, index) =>
+      {menuList.map((food, index) =>
         <Menu item = {food.item}
           description = {food.description}
           price = {food.price}

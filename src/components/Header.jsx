@@ -21,7 +21,7 @@ function Header(){
           }
           h1 {
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-weight: 300;
+            font-weight: 400;
             text-align: center;
             text-decoration: underline;
             text-underline-position: under;
@@ -43,7 +43,7 @@ function Header(){
       <h1>Cure What Ales You</h1>
       <h2>Tap-Room and BBQ</h2>
       <div className='nav'>
-        <Link style={link} to='/'>Home</Link>  <Link style={link} to='/hours'>Hours</Link>  <Link style={link} to='/beers'>Beer List</Link> <Link style={link} to='/menu'>Menu</Link>
+        <Link style={link} to='/'>Home</Link> <Link style={link} to='/beers'>Beer List</Link> <Link style={link} to='/menu'>Menu</Link>
       </div>
     </div>
   );

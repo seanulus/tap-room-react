@@ -80,6 +80,9 @@ function BeersList(){
             border-radius: 5px;
             width: 100%;
           }
+          @media screen and (max-width: 950px) {
+            display: block;
+          }
       `}</style>
 
       {masterKegList.map((beer, index) =>
