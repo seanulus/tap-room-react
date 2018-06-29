@@ -59,6 +59,11 @@ function MenuList() {
             padding-left: 20px;
             color: white;
           }
+          @media screen and (max-width: 720px) {
+            div {
+              display: block;
+            }
+          }
       `}</style>
       {menuList.map((food, index) =>
         <Menu item = {food.item}

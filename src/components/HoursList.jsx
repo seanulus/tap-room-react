@@ -39,7 +39,7 @@ function HoursList(){
     gridTemplateColumns: 'repeat(7, 1fr)',
     gridColumnGap: '10px',
     padding: '10px',
-    height: '240px'
+    height: '100px'
   };
 
   return(

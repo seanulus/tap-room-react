@@ -81,7 +81,9 @@ function BeersList(){
             width: 100%;
           }
           @media screen and (max-width: 950px) {
-            display: block;
+            div {
+              display: block;
+            }
           }
       `}</style>
 

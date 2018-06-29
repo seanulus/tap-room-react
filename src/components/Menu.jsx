@@ -19,6 +19,12 @@ function Menu(props) {
             font-weight: 300;
             letter-spacing, 5px;
           }
+          @media screen and (max-width: 720px) {
+            img {
+              width: 30vw;
+              height 30vw;
+            }
+          }
       `}</style>
       <div className='food-image'>
         <img src={props.image}/>
