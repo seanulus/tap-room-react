@@ -6,7 +6,7 @@
 * This is our week one code review for the React portion of our course. The goal of this review is to take a previous project we made in angular and clone a static version that includes client-side routing, styling with css objects/modules, propTypes, and components for modular UI elements.
 
 ## Component Tree
-![Sketch](src/assets/img/tree.jpg)
+![Sketch](./src/assets/img/tree.jpg)
 
 ## Specifications
 
